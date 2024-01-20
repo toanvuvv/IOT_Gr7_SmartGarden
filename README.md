@@ -65,8 +65,9 @@ Open the Serial Monitor in the Arduino IDE to debug and check for any connection
 
 ## Prerequisites
 
-- Node.js and npm (Node Package Manager) installed.
+- Node.js (Version 18.17.0) and npm (Node Package Manager) installed.
 - A MQTT broker if you want to handle real-time IoT data.
+- NextJs, ExpressJs
 
 ## Steps
 
