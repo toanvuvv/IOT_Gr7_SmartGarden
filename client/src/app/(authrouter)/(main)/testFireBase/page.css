@@ -1,0 +1,47 @@
+/* CSS file */
+
+/* Thiết lập kiểu cho thanh trượt */
+.toggle-container {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-input {
+  display: none; /* Ẩn input checkbox mặc định */
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* Khi thanh trượt được bật, thay đổi màu nền */
+.toggle-input:checked + .toggle-slider {
+  background-color: #2196f3;
+}
+
+/* Khi thanh trượt được bật, di chuyển nút trượt về phải */
+.toggle-input:checked + .toggle-slider:before {
+  transform: translateX(26px);
+}
